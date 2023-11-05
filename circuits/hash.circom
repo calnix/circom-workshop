@@ -18,3 +18,12 @@ template Main() {
 }
 
 component main = Main();
+
+// include for importing
+// be it dir or direct from github
+// allows re-use of circuits to build larger circuits
+
+
+// hardhat-circom
+// will test the 
+

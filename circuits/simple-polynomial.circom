@@ -32,3 +32,18 @@ component main = Main();
 
 // constraints are done with `===` notation
 
+// # Compilation
+// compiling the circuit gives us an R1CS file, that can be used with different toolstacks, that implement the Groth16 protocol.
+// think of it as a IR representation; like your compiled bytecode.
+
+// .wasm file
+// a wasm exceutable program that implements the single arrow stuff - witness generation.
+// witness generation program that allows derivation of the intermediate signals (x_squared, x_cubed) just from the single input, x.
+
+// .vkey: verification key
+// goes into your smart contract for verification. 
+// a .sol file is also created, whjich is a contract based on the vk that serves as the verification component. 
+// .sol file would expose a `verifyProof` function
+
+// .zkey: proving key
+// goes into your client, Dapp FE
